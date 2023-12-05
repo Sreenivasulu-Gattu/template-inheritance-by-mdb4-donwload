@@ -1,0 +1,28 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% block title %}
+        <title>Main Parent page</title>
+    {% endblock %}
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'mdb.css' %}">
+    <link rel="stylesheet" href="{% static 'css/c1.css' %}">
+</head>
+<body>
+
+    {% block body_block %}
+        <h1 class="btn btn-primary">Now its working </h1>
+    {% endblock %}
+
+    <script src="{% static 'jquery.js' %}"></script>
+    <script src="{% static 'popper.js' %}"></script>
+    <script src="{% static 'bootstrap.js' %}"></script>
+    <script src="{% static 'mdb.js' %}"></script>
+</body>
+</html>

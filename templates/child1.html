@@ -1,0 +1,30 @@
+
+
+{% extends 'index.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}
+        <title>Child 1</title>
+        
+    {% endblock %}
+    
+
+</head>
+<body>
+    {% block body_block %}
+        <div>
+            <h1 class="btn btn-danger">Its a Button from child class</h1>
+        </div>
+        
+        <div>
+            <h2 class="btn btn-success">This is also a button </h2>
+        </div>
+        
+
+    {% endblock %}
+</body>
+</html>
